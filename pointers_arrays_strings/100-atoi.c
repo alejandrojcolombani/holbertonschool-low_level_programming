@@ -1,31 +1,32 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string to an integer
- * @s: string to convert
+ * _atoi - Converts a string to an integer, taking into account
+ *        + and - signs preceding the number.
+ * @s: The string to be converted.
  *
- * Return: converted integer
+ * Return: The integer value of the converted string.
  */
 int _atoi(char *s)
 {
-	int i, sign, res;
+	int result = 0;
+	int sign = 1;
+	int started = 0;
 
-	sign = 1;
-	res = 0;
-
-	/* Find first digit, tracking sign changes before it */
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] == '-')
+		if (*s == '-')
 			sign = -sign;
-
-		if (s[i] >= '0' && s[i] <= '9')
+		else if (*s >= '0' && *s <= '9')
+		{
+			started = 1;
+			result = (result * 10) + sign * (*s - '0');
+		}
+		else if (started)
+		{
 			break;
+		}
+		s++;
 	}
-
-	/* Convert consecutive digits */
-	for (; s[i] >= '0' && s[i] <= '9'; i++)
-		res = (res * 10) + (s[i] - '0');
-
-	return (res * sign);
+	return (result);
 }
