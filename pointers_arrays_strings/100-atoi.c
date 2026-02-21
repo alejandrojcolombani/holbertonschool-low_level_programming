@@ -2,7 +2,7 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: pointer to string
+ * @s: pointer to the string
  *
  * Return: integer converted from string
  */
@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int num = 0;
 
-	/* Handle signs */
+	/* Determine sign */
 	while (s[i])
 	{
 		if (s[i] == '-')
