@@ -1,0 +1,1 @@
+This project introduces the fundamental concepts of pointers, arrays, and strings in the C programming language. These are core building blocks of low-level programming and memory manipulation.
