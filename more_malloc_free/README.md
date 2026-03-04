@@ -1,0 +1,1 @@
+This project builds on dynamic memory allocation in C.
