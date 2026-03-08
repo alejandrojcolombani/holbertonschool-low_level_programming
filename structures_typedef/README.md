@@ -1,0 +1,1 @@
+This project introduces structures in C and how they help group different types of data into a single unit. Structures are useful when you want to represent real-world objects that contain multiple related attributes.
