@@ -1,0 +1,1 @@
+This project introduces variadic functions in C, which are functions that can accept a variable number of arguments. Instead of requiring a fixed number of parameters, variadic functions allow flexibility by processing an unknown number of inputs at runtime
