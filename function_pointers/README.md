@@ -1,0 +1,1 @@
+This project introduces function pointers in C. Function pointers allow a program to store the address of a function in a variable and call that function dynamically. This technique is commonly used in callbacks, event handlers, and implementing flexible program behavior.
