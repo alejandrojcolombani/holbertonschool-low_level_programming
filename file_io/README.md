@@ -1,0 +1,1 @@
+This project focuses on low-level file input/output in C using system calls. It covers how to create, open, read, write, and close files, as well as understanding file descriptors and permissions in a Linux environment.
