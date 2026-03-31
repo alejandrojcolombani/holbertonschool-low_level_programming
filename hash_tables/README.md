@@ -1,0 +1,1 @@
+This project introduces hash tables, a powerful data structure used for fast data storage and retrieval. It covers hash functions, collision handling, and real-world applications of hash tables.
